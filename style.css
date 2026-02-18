@@ -1,0 +1,130 @@
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f4f7fb;
+    color:#1a1a1a;
+}
+
+header {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#002b5c;
+    color:white;
+}
+
+.logo-container {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo {
+    height:40px;
+}
+
+nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav a:hover {
+    opacity:0.7;
+}
+
+.hero {
+    height:90vh;
+    background:linear-gradient(rgba(0,43,92,0.8),rgba(0,43,92,0.8)),
+    url("https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d");
+    background-size:cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1 {
+    font-size:2.5rem;
+    margin-bottom:20px;
+}
+
+.btn-primary {
+    background:white;
+    color:#002b5c;
+    padding:12px 25px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn-primary:hover {
+    background:#0057b7;
+    color:white;
+}
+
+.about, .project {
+    padding:80px 15%;
+}
+
+.about {
+    display:flex;
+    gap:50px;
+    align-items:center;
+}
+
+.about img {
+    width:100%;
+    border-radius:15px;
+}
+
+.specialites-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    padding:80px 10%;
+}
+
+.spe-card {
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    text-decoration:none;
+    color:#002b5c;
+    font-weight:bold;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.spe-card:hover {
+    transform:translateY(-10px);
+}
+
+.spe-detail {
+    padding:100px 15%;
+}
+
+.spe-img {
+    width:100%;
+    margin-top:20px;
+    border-radius:15px;
+}
+
+footer {
+    background:#002b5c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    .about {
+        flex-direction:column;
+    }
+}
